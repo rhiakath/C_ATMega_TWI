@@ -1,7 +1,7 @@
 #include "ATMega_TWI.h"
 #include <avr/io.h>
 #include <util/twi.h>
-#include <Platform.h>
+#include <Macros.h>
 #include <string.h>
 #include <stdio.h>
 // #include <C_Logger/Logger.h>
@@ -93,7 +93,7 @@ uint8_t TWIGetLastStatus ( void )
     {
     return LastTWIStatus;
     }
-
+/*
 const char* TWIStatusToString ( uint8_t In_Status )
     {
     static char DefaultMessage[30];
@@ -139,4 +139,4 @@ const char *TWCRToString ( void )
         strcat ( FullString, " " );
         }
     return FullString;
-    }
+    }*/
